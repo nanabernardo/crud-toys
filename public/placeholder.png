@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#e8d5b7"/>
+  <text x="200" y="160" font-size="80" text-anchor="middle" dominant-baseline="middle">🧸</text>
+  <text x="200" y="230" font-size="14" text-anchor="middle" fill="#1a3a2a" opacity="0.5" font-family="Georgia, serif">Sem imagem</text>
+</svg>

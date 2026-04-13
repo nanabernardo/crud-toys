@@ -1,0 +1,23 @@
+// prisma/schema.prisma
+// Usamos SQLite por ser zero-config (sem servidor), ideal para dev local.
+// Para produção, troque provider para "postgresql" e ajuste DATABASE_URL.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Toy {
+  id              Int      @id @default(autoincrement())
+  nome            String
+  valorEncontrado Float
+  valorOferecido  Float
+  observacoes     String?
+  imagem          String?  // Caminho local (/uploads/...) ou URL externa
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
