@@ -9,6 +9,7 @@ import { SearchBar } from "@/components/SearchBar";
 import { SortControls } from "@/components/SortControls";
 import { SortField, SortOrder } from "@/lib/types";
 import { TotalsBar } from "@/components/TotalBar";
+import { ExportButton } from "@/components/ExportButton";
 
 interface PageProps {
   searchParams: {
@@ -55,6 +56,7 @@ export default async function HomePage({ searchParams }: PageProps) {
               : `${toys.length} brinquedo${toys.length > 1 ? "s" : ""} encontrado${toys.length > 1 ? "s" : ""}`}
           </p>
         </div>
+        <ExportButton />
         <Link
           href="/toys/new"
           className="btn-primary inline-flex items-center gap-2"
